@@ -49,7 +49,7 @@ The SDK is validated on the following platforms:
 ## Usage
 
 * The *.mobvoi* (hidden directory) contains info for SDK to run. SDK also writes to the directory. So you should install it to a writable directory
-* Specify the location (.mobvoi directory's parent directory) to *mobvoi_sdk_init()* in your program
+* Pass the location (.mobvoi directory's parent directory) to *mobvoi_sdk_init()* in your program
 * Create your program according to the [SDK documentation](http://ai.chumenwenwen.com/pages/document/index) and the sample code in samples/src/
 * When build your program, link *libmobvoisdk.so* provided in *lib/{arch}/*
 * When run your program, specify the location for *libmobvoisdk.so* to *LD_LIBRARY_PATH* environment variable
