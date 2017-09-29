@@ -51,8 +51,8 @@ The SDK is validated on the following platforms:
 * The *.mobvoi* (hidden directory) contains info for SDK to run. SDK also writes to the directory. So you should install it to a writable directory
 * Pass the location (.mobvoi directory's parent directory) to *mobvoi_sdk_init()* in your program
 * Create your program according to the [SDK documentation](http://ai.chumenwenwen.com/pages/document/index) and the sample code in samples/src/
-* When build your program, link *libmobvoisdk.so* provided in *lib/{arch}/*
-* When run your program, specify the location for *libmobvoisdk.so* to *LD_LIBRARY_PATH* environment variable
+* When building your program, link *libmobvoisdk.so* provided in *lib/{arch}/*
+* When running your program, specify the location for *libmobvoisdk.so* to *LD_LIBRARY_PATH* environment variable
 
 ## Samples
 
@@ -79,8 +79,8 @@ Note:
 
 ## Trouble shooting
 
-The following are some hints for SDK trouble shooting:
-* SDK generates logs when it runs, you can examine the logs to get clues
+Hints for SDK trouble shooting:
+* SDK generates logs when it runs. So you can examine the logs to get clues
 * You can get more detailed logs by invoking *mobvoi_set_vlog_level()*
   * Invoking mobvoi_set_vlog_level(3) also saves the received PCM audio streams to *.mobvoi/audio_dump/record.pcm*
 
